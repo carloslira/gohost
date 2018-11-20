@@ -1,10 +1,10 @@
 {
   "main.css": "/gohost/static/css/main.ed459bd4.chunk.css",
-  "main.js": "/gohost/static/js/main.5d6f4a64.chunk.js",
-  "main.js.map": "/gohost/static/js/main.5d6f4a64.chunk.js.map",
+  "main.js": "/gohost/static/js/main.fb6857bc.chunk.js",
+  "main.js.map": "/gohost/static/js/main.fb6857bc.chunk.js.map",
   "static/css/1.7ebd4789.chunk.css": "/gohost/static/css/1.7ebd4789.chunk.css",
-  "static/js/1.e4668d9c.chunk.js": "/gohost/static/js/1.e4668d9c.chunk.js",
-  "static/js/1.e4668d9c.chunk.js.map": "/gohost/static/js/1.e4668d9c.chunk.js.map",
+  "static/js/1.36ada535.chunk.js": "/gohost/static/js/1.36ada535.chunk.js",
+  "static/js/1.36ada535.chunk.js.map": "/gohost/static/js/1.36ada535.chunk.js.map",
   "runtime~main.js": "/gohost/static/js/runtime~main.6c55f251.js",
   "runtime~main.js.map": "/gohost/static/js/runtime~main.6c55f251.js.map",
   "static/media/image_1.jpg": "/gohost/static/media/image_1.f3e3801d.jpg",
@@ -13,6 +13,6 @@
   "static/css/main.ed459bd4.chunk.css.map": "/gohost/static/css/main.ed459bd4.chunk.css.map",
   "static/css/1.7ebd4789.chunk.css.map": "/gohost/static/css/1.7ebd4789.chunk.css.map",
   "index.html": "/gohost/index.html",
-  "precache-manifest.cd236e30d70e8af32443a83967d6c358.js": "/gohost/precache-manifest.cd236e30d70e8af32443a83967d6c358.js",
+  "precache-manifest.49b7dec5dbf9b6abaf3cacb4093ace92.js": "/gohost/precache-manifest.49b7dec5dbf9b6abaf3cacb4093ace92.js",
   "service-worker.js": "/gohost/service-worker.js"
 }
