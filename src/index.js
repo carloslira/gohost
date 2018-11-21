@@ -3,13 +3,9 @@ import ReactDOM from 'react-dom';
 
 import {
     Route,
-    Router,
-    Switch
+    Switch,
+    HashRouter
 } from 'react-router-dom';
-
-import {
-    createBrowserHistory
-} from 'history';
 
 import {
     ThemeProvider
@@ -19,12 +15,11 @@ import indexRoutes from './routes/index';
 
 import theme from './styles/theme';
 
+import './assets/css/custom.css?v=1.0.0';
 import './assets/css/normalize.css?v=8.0.0';
 
-const hist = createBrowserHistory();
-
 ReactDOM.render(
-    <Router history={hist}>
+    <HashRouter>
         <ThemeProvider theme={theme}>
             <Switch>
                 {indexRoutes.map((prop, key) => {
@@ -32,6 +27,6 @@ ReactDOM.render(
                 })}
             </Switch>
         </ThemeProvider>
-    </Router>,
+    </HashRouter>,
     document.getElementById('root')
 );

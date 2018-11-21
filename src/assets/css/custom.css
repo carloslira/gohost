@@ -1,0 +1,18 @@
+html,
+body {
+	overflow-x: hidden;
+}
+
+.aws-sld,
+.aws-sld__wrapper {
+	height: 100%;
+}
+
+.aws-sld__bullets {
+	bottom: 50px;
+}
+
+.aws-sld__bullets,
+.aws-sld__controls {
+	visibility: hidden;
+}

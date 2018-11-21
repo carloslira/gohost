@@ -5,9 +5,7 @@ const transition = {
 };
 
 const defaultFont = {
-    fontWeight: '300',
-    lineHeight: '1.5em',
-    fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif'
+    fontFamily: '"Pluto", "Helvetica", "Arial", sans-serif'
 };
 
 const primaryColor = '#F7A600';

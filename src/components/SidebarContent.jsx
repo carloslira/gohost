@@ -10,7 +10,7 @@ import {
 
 import appRoutes from '../routes/app';
 
-import sidebar_logo from '../assets/img/sidebar_logo.jpg';
+import sidebar_logo from '../assets/img/sidebar_logo.png';
 
 import sidebarContentStyle from '../assets/jss/components/sidebarContentStyle';
 

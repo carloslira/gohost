@@ -1,4 +1,5 @@
 import {
+	transition,
     primaryColor,
     secondaryColor
 } from '../theme';
@@ -26,9 +27,13 @@ const sidebarContentStyle = theme => ({
     },
     listItem: {
         margin: '20px 0',
-        fontSize: '20px'
+		fontSize: '18px',
+		lineHeight: '18px',
+		fontWeight: 'bold',
+		fontFamily: '"Pluto"'
     },
     listItemLink: {
+		...transition,
         color: secondaryColor,
         textDecoration: 'none'
     },
