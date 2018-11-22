@@ -1,6 +1,5 @@
 import {
-	navbarHeight,
-	primaryColor
+	navbarHeight
 } from '../theme';
 
 const homeStyle = theme => ({
@@ -42,7 +41,6 @@ const homeStyle = theme => ({
 		},
 		fontSize: '35px',
 		fontWeight: '500',
-		color: primaryColor,
 		margin: '40px 0 80px 0'
 	},
 	slogan: {

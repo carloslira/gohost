@@ -61,8 +61,8 @@ class Home extends React.Component {
 							</Col>
 							<Col xs={12} md={6} mdOffset={6} className={classes.content}>
 								<div className={classes.sloganContainer}>
-									<P className={classes.slogan}>Seu imóvel</P>
-									<P className={classes.slogan}>fazendo sucesso.</P>
+									<P color="primary" className={classes.slogan}>Seu imóvel</P>
+									<P color="primary" className={classes.slogan}>fazendo sucesso.</P>
 								</div>
 								<img src={happy} className={classes.happy} alt="happy" />
 							</Col>

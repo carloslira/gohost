@@ -9,13 +9,14 @@ import pStyle from '../assets/jss/components/pStyle';
 const P = ({ ...props }) => {
 
 	const {
+		color,
 		classes,
 		children,
 		className
 	} = props;
 
 	return (
-		<p className={classNames(className, classes.p)}>
+		<p className={classNames(className, classes.p, color ? classes[color] : classes.black)}>
 			{children}
 		</p>
 	);
@@ -24,7 +25,13 @@ const P = ({ ...props }) => {
 P.propTypes = {
 	className: PropTypes.string,
 	children: PropTypes.any.isRequired,
-	classes: PropTypes.object.isRequired
+	classes: PropTypes.object.isRequired,
+	color: PropTypes.oneOf([
+		'black',
+		'white',
+		'primary',
+		'secondary'
+	])
 };
 
 export default injectSheet(pStyle)(P);
