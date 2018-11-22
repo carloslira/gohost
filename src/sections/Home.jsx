@@ -15,15 +15,15 @@ import {
 import P from '../components/P';
 
 import logo from '../assets/img/logo.png';
-import happy from '../assets/img/inicial/happy.png';
-import image_1 from '../assets/img/inicial/image_1.jpg';
-import image_2 from '../assets/img/inicial/image_2.jpg';
-import image_3 from '../assets/img/inicial/image_3.jpg';
-import pattern_1 from '../assets/img/inicial/pattern.png';
+import happy from '../assets/img/home/happy.png';
+import image_1 from '../assets/img/home/image_1.jpg';
+import image_2 from '../assets/img/home/image_2.jpg';
+import image_3 from '../assets/img/home/image_3.jpg';
+import pattern from '../assets/img/home/pattern.png';
 
-import inicialStyle from '../assets/jss/views/inicialStyle';
+import homeStyle from '../assets/jss/sections/homeStyle';
 
-class Inicial extends React.Component {
+class Home extends React.Component {
 
 	state = {
 		selected: 0
@@ -57,7 +57,7 @@ class Inicial extends React.Component {
 					<Grid fluid>
 						<Row>
 							<Col xs={12} className={classes.logoContainer}>
-								<img src={logo} className={classes.logo} alt="logo" />
+								<img src={logo} className={classes.logo} alt="GoHost" />
 							</Col>
 							<Col xs={12} md={6} mdOffset={6} className={classes.content}>
 								<div className={classes.sloganContainer}>
@@ -68,15 +68,15 @@ class Inicial extends React.Component {
 							</Col>
 						</Row>
 					</Grid>
-					<img src={pattern_1} alt="pattern_1" className={classes.pattern} />
+					<img src={pattern} className={classes.pattern} alt="pattern" />
 				</div>
 			</div>
 		);
 	}
 }
 
-Inicial.propTypes = {
+Home.propTypes = {
 	classes: PropTypes.object.isRequired
 };
 
-export default injectSheet(inicialStyle)(Inicial);
+export default injectSheet(homeStyle)(Home);

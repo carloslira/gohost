@@ -34,6 +34,7 @@ const sidebarContentStyle = theme => ({
     },
     listItemLink: {
 		...transition,
+		cursor: 'pointer',
         color: secondaryColor,
         textDecoration: 'none'
     },

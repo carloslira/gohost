@@ -6,11 +6,12 @@ import injectSheet from 'react-jss';
 
 import P from '../components/P';
 
-import happy from '../assets/img/nos/happy.png';
+import happy from '../assets/img/we/happy.png';
+import pattern from '../assets/img/we/pattern.png';
 
-import nosStyle from '../assets/jss/views/nosStyle';
+import weStyle from '../assets/jss/sections/weStyle';
 
-class Nos extends React.Component {
+class We extends React.Component {
 
 	render() {
 		const {
@@ -24,6 +25,7 @@ class Nos extends React.Component {
 						<P className={classes.description}>A GoHost oferece todos os serviços de gerenciamento de aluguéis que seu imóvel merece para se tornar um sucesso de ocupação e avaliação</P>
 						<img src={happy} className={classes.happy} alt="happy" />
 					</div>
+					<img src={pattern} className={classes.pattern} alt="pattern" />
 				</div>
 				<div className={classes.imagesWrapper}>
 					<div className={classNames(classes.image, classes.image_1)} />
@@ -35,8 +37,8 @@ class Nos extends React.Component {
 	}
 }
 
-Nos.propTypes = {
+We.propTypes = {
 	classes: PropTypes.object.isRequired
 };
 
-export default injectSheet(nosStyle)(Nos);
+export default injectSheet(weStyle)(We);

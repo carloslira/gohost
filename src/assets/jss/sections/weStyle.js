@@ -1,19 +1,27 @@
 import {
+	navbarHeight,
 	primaryColor,
 	secondaryColor
 } from '../theme';
 
-import image_1 from '../../img/nos/image_1.jpg';
-import image_2 from '../../img/nos/image_2.jpg';
-import image_3 from '../../img/nos/image_3.jpg';
+import image_1 from '../../img/we/image_1.jpg';
+import image_2 from '../../img/we/image_2.jpg';
+import image_3 from '../../img/we/image_3.jpg';
 
 const nosStyle = theme => ({
 	wrapper: {
+		[theme.breakpoints.up('md')]: {
+			height: `calc(100vh - ${navbarHeight}px)`
+		},
 		height: '100vh'
 	},
 	descriptionContainer: {
+		[theme.breakpoints.up('md')]: {
+			minHeight: `calc(50vh - ${navbarHeight / 2}px)`
+		},
 		display: 'flex',
 		minHeight: '50vh',
+		position: 'relative',
 		alignItems: 'center',
 		justifyContent: 'center',
 		backgroundColor: primaryColor
@@ -38,12 +46,26 @@ const nosStyle = theme => ({
 		maxWidth: '100%',
 		marginTop: '30px'
 	},
+	pattern: {
+		[theme.breakpoints.down('md')]: {
+			display: 'none'
+		},
+		zIndex: '3',
+		right: '-40px',
+		position: 'absolute'
+	},
 	imagesWrapper: {
-		minHeight: '50vh',
+		[theme.breakpoints.up('md')]: {
+			minHeight: `calc(50vh - ${navbarHeight / 2}px)`
+		},
+		minHeight: '50vh'
 	},
 	image: {
+		[theme.breakpoints.up('md')]: {
+			minHeight: `calc(50vh - ${navbarHeight / 2}px)`
+		},
 		float: 'left',
-		width: '33.3%',
+		width: '33.33%',
 		minHeight: '50vh',
 		backgroundSize: 'cover',
 		backgroundRepeat: 'no-repeat',

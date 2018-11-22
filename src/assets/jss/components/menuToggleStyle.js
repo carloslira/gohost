@@ -1,4 +1,5 @@
 import {
+	transition,
 	primaryColor
 } from '../theme';
 
@@ -10,6 +11,7 @@ const menuToggleStyle = theme => ({
 		position: 'absolute'
 	},
 	bar: {
+		...transition,
 		width: '35px',
 		height: '5px',
 		margin: '6px 0',

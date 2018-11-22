@@ -6,27 +6,25 @@ import injectSheet from 'react-jss';
 
 import pStyle from '../assets/jss/components/pStyle';
 
-class P extends React.Component {
+const P = ({ ...props }) => {
 
-    render() {
-        const {
-            classes,
-            children,
-            className
-        } = this.props;
+	const {
+		classes,
+		children,
+		className
+	} = props;
 
-        return (
-            <p className={classNames(className, classes.p)}>
-                {children}
-            </p>
-        );
-    }
+	return (
+		<p className={classNames(className, classes.p)}>
+			{children}
+		</p>
+	);
 }
 
 P.propTypes = {
-    className: PropTypes.string,
-    children: PropTypes.any.isRequired,
-    classes: PropTypes.object.isRequired
+	className: PropTypes.string,
+	children: PropTypes.any.isRequired,
+	classes: PropTypes.object.isRequired
 };
 
 export default injectSheet(pStyle)(P);

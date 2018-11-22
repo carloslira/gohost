@@ -5,12 +5,12 @@ import classNames from 'classnames';
 import injectSheet from 'react-jss';
 
 import {
-    NavLink
-} from 'react-router-dom';
+	Link
+} from 'react-scroll';
 
 import appRoutes from '../routes/app';
 
-import sidebar_logo from '../assets/img/sidebar_logo.png';
+import simplified_logo from '../assets/img/simplified_logo.png';
 
 import sidebarContentStyle from '../assets/jss/components/sidebarContentStyle';
 
@@ -18,30 +18,32 @@ const SidebarContent = ({ ...props }) => {
 
     const {
         classes,
-        className
+		className,
+		onSectionChanged
     } = props;
 
     return (
         <div className={classNames(className, classes.container)}>
             <div className={classes.logoContainer}>
-                <img className={classes.logo} src={sidebar_logo} alt="GoHost" />
+                <img className={classes.logo} src={simplified_logo} alt="GoHost" />
             </div>
             <div className={classes.listContainer}>
                 <ul className={classes.list}>
                     {appRoutes.map((prop, key) => {
-                        if (prop.redirect) {
-                            return null;
-                        }
-
                         return (
                             <li className={classes.listItem} key={key}>
-                                <NavLink
-                                    to={prop.path}
-                                    className={classes.listItemLink}
-                                    activeClassName={classes.activeListItemLink}
-                                >
-                                    {prop.sidebarName}
-                                </NavLink>
+								<Link
+									spy={true}
+									smooth={true}
+									duration={250}
+									to={prop.section.name}
+									containerId="sections"
+									onSetActive={onSectionChanged}
+									className={classes.listItemLink}
+									activeClass={classes.activeListItemLink}
+								>
+									{prop.sidebarName}
+								</Link>
                             </li>
                         );
                     })}
@@ -52,8 +54,9 @@ const SidebarContent = ({ ...props }) => {
 }
 
 SidebarContent.propTypes = {
-    className: PropTypes.string,
-    classes: PropTypes.object.isRequired
+	className: PropTypes.string,
+    classes: PropTypes.object.isRequired,
+	onSectionChanged: PropTypes.func.isRequired
 };
 
 export default injectSheet(sidebarContentStyle)(SidebarContent);

@@ -1,10 +1,15 @@
 import {
+	navbarHeight,
 	primaryColor
 } from '../theme';
 
-const inicialStyle = theme => ({
+const homeStyle = theme => ({
 	wrapper: {
-		height: '100vh'
+		[theme.breakpoints.up('md')]: {
+			marginTop: `-${navbarHeight}px`
+		},
+		height: '100vh',
+		position: 'relative'
 	},
 	overlay: {
 		top: '0',
@@ -62,4 +67,4 @@ const inicialStyle = theme => ({
 	}
 });
 
-export default inicialStyle;
+export default homeStyle;

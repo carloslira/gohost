@@ -30,7 +30,9 @@ const appStyle = theme => ({
 		}
 	],
 	wrapper: {
-		height: '100vh'
+        height: '100vh',
+        overflowX: 'hidden',
+        overflowY: 'scroll',
 	},
 	sidebar: {
 		zIndex: '5 !important',
@@ -39,6 +41,9 @@ const appStyle = theme => ({
 	},
 	sidebarOverlay: {
 		zIndex: '4 !important'
+	},
+	stickyBox: {
+		zIndex: '3'
 	},
 	content: {
 		overflowX: 'hidden'

@@ -1,40 +1,47 @@
-import Nos from '../views/Nos';
-import Inicial from '../views/Inicial';
-import Contato from '../views/Contato';
-import Processo from '../views/Processo';
-import Servicos from '../views/Servicos';
+import WeSection from '../sections/We';
+import HomeSection from '../sections/Home';
 
 const appRoutes = [
-    {
-        path: '/inicial',
-        component: Inicial,
-        sidebarName: 'Inicial'
-    },
-    {
-        path: '/nos',
-        component: Nos,
-        sidebarName: 'Nós'
-    },
-    {
-        path: '/processo',
-        component: Processo,
-        sidebarName: 'Processo'
-    },
-    {
-        path: '/servicos',
-        component: Servicos,
-        sidebarName: 'Serviços e Pacotes'
-    },
-    {
-        path: '/contato',
-        component: Contato,
-        sidebarName: 'Contato'
-    },
-    {
-        path: '/',
-        redirect: true,
-        to: '/inicial'
-    }
+	{
+		navbarName: 'Inicial',
+		sidebarName: 'Inicial',
+		section: {
+			name: 'home',
+			component: HomeSection
+		}
+	},
+	{
+		navbarName: 'Nós',
+		sidebarName: 'Nós',
+		section: {
+			name: 'we',
+			component: WeSection
+		}
+	},
+	// {
+	// 	navbarName: 'Processo',
+	// 	sidebarName: 'Processo',
+	// 	section: {
+	// 		name: 'process',
+	// 		component: HomeSection
+	// 	}
+	// },
+	// {
+	// 	navbarName: 'Serviços e Pacotes',
+	// 	sidebarName: 'Serviços e Pacotes',
+	// 	section: {
+	// 		name: 'services',
+	// 		component: HomeSection
+	// 	}
+	// },
+	// {
+	// 	navbarName: 'Contato',
+	// 	sidebarName: 'Contato',
+	// 	section: {
+	// 		name: 'contact',
+	// 		component: HomeSection
+	// 	}
+	// }
 ];
 
 export default appRoutes;

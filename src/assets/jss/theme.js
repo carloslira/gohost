@@ -1,3 +1,4 @@
+const navbarHeight = 64;
 const sidebarWidth = 256;
 
 const transition = {
@@ -18,7 +19,8 @@ const lightGrayColor = '#E1E2E1';
 export {
     grayColor,
     transition,
-    defaultFont,
+	defaultFont,
+	navbarHeight,
     sidebarWidth,
     primaryColor,
     darkGrayColor,
