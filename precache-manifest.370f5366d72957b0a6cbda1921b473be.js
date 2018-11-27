@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "edcaa10ad606738f3f7f896019b66f27",
-    "url": "/gohost/static/media/image_1.edcaa10a.jpg"
+    "revision": "eb124025962d76321bfc5c3255772a3e",
+    "url": "/gohost/static/media/image_2.eb124025.jpg"
   },
   {
-    "revision": "e0e16b035eb19912ad15",
-    "url": "/gohost/static/css/main.3851344c.chunk.css"
+    "revision": "119548b80042aee18795",
+    "url": "/gohost/static/css/main.df8edae5.chunk.css"
   },
   {
     "revision": "279e1c6d1f61a141b31ddd770b736b2e",
     "url": "/gohost/static/media/secondary_color_filler.279e1c6d.png"
   },
   {
-    "revision": "d4c935ac29857743dc92",
-    "url": "/gohost/static/js/1.d4c935ac.chunk.js"
+    "revision": "bfbc6421fc5e8b6b3b8e",
+    "url": "/gohost/static/js/1.bfbc6421.chunk.js"
   },
   {
     "revision": "6c55f251cf55205944af",
@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/gohost/static/media/claim_3.e361ca6c.jpg"
   },
   {
-    "revision": "e0e16b035eb19912ad15",
-    "url": "/gohost/static/js/main.e0e16b03.chunk.js"
+    "revision": "edcaa10ad606738f3f7f896019b66f27",
+    "url": "/gohost/static/media/image_1.edcaa10a.jpg"
   },
   {
-    "revision": "eb124025962d76321bfc5c3255772a3e",
-    "url": "/gohost/static/media/image_2.eb124025.jpg"
+    "revision": "119548b80042aee18795",
+    "url": "/gohost/static/js/main.119548b8.chunk.js"
   },
   {
     "revision": "be7b8df87f0c514826005bf4758c82ec",
@@ -56,15 +56,19 @@ self.__precacheManifest = [
     "url": "/gohost/static/media/image_3.c34bfe6a.jpg"
   },
   {
+    "revision": "63a72f07889f1366da09c41c0fa450d0",
+    "url": "/gohost/static/media/background.63a72f07.jpg"
+  },
+  {
     "revision": "c06606dc82fe415742b34f539ca1cce2",
     "url": "/gohost/static/media/primary_color_filler.c06606dc.png"
   },
   {
-    "revision": "d4c935ac29857743dc92",
-    "url": "/gohost/static/css/1.ab1160c5.chunk.css"
+    "revision": "bfbc6421fc5e8b6b3b8e",
+    "url": "/gohost/static/css/1.7daaee96.chunk.css"
   },
   {
-    "revision": "ec4e5103bf9e8d4ef7e2bd475e7b6a5f",
+    "revision": "d1b4f60391d447a7c11607b63665fd7d",
     "url": "/gohost/index.html"
   }
 ];
