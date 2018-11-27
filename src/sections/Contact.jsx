@@ -13,6 +13,7 @@ import {
 
 import P from '../components/P';
 
+import send from '../assets/img/contact/send.png';
 import pattern from '../assets/img/contact/pattern.png';
 
 import contactStyle from '../assets/jss/sections/contactStyle';
@@ -60,6 +61,7 @@ class Contact extends React.Component {
 										<MaskedInput name="phone" placeholder="Telefone" className={classes.input} mask={this.phoneMask} placeholderChar={'\u2000'} onChange={this.onInputChanged} value={phone} required />
 										<input type="text" name="subject" placeholder="Assunto" className={classes.input} onChange={this.onInputChanged} value={subject} required />
 										<Textarea name="message" placeholder="Mensagem" minRows={5} className={classes.input} onChange={this.onInputChanged} value={message} required />
+                                        <button className={classes.submitFormButton}><P color="secondary" className={classes.submitFormButtonText}>Enviar</P> <img src={send} className={classes.submitFormButtonIcon} alt="Enviar" /></button>
 									</form>
 								</div>
 							</div>
