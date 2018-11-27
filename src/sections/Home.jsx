@@ -47,7 +47,7 @@ class Home extends React.Component {
 		} = this.state;
 
 		return (
-			<div className={classes.wrapper}>
+			<div className={classes.container}>
 				<AwesomeSlider selected={selected} onFirstMount={this.onSliderMounted}>
 					<div data-src={image_1} />
 					<div data-src={image_2} />

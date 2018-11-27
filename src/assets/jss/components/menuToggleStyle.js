@@ -1,10 +1,10 @@
 import {
 	transition,
-	primaryColor
+	darkGrayColor
 } from '../theme';
 
 const menuToggleStyle = theme => ({
-	wrapper: {
+	container: {
 		zIndex: '3',
 		top: '20px',
 		right: '20px',
@@ -15,13 +15,8 @@ const menuToggleStyle = theme => ({
 		width: '35px',
 		height: '5px',
 		margin: '6px 0',
-		borderRadius: '3px'
-	},
-	primary: {
-		backgroundColor: primaryColor
-	},
-	white: {
-		backgroundColor: 'white'
+		borderRadius: '3px',
+		backgroundColor: darkGrayColor
 	}
 });
 

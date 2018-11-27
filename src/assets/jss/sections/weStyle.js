@@ -12,12 +12,6 @@ import image_2 from '../../img/we/image_2.jpg';
 import image_3 from '../../img/we/image_3.jpg';
 
 const nosStyle = theme => ({
-	wrapper: {
-		[theme.breakpoints.up('md')]: {
-			height: `calc(100vh - ${navbarHeight}px)`
-		},
-		height: '100vh'
-	},
 	descriptionContainer: {
 		[theme.breakpoints.up('md')]: {
 			minHeight: `calc(50vh - ${navbarHeight / 2}px)`
@@ -52,7 +46,6 @@ const nosStyle = theme => ({
 		[theme.breakpoints.down('md')]: {
 			display: 'none'
 		},
-		zIndex: '3',
 		right: '-40px',
 		position: 'absolute'
 	},
@@ -110,11 +103,11 @@ const nosStyle = theme => ({
 	claimDescriptionTitle:{
 		[theme.breakpoints.down('md')]: {
 			fontSize: '35px',
-			lineHeight: '55px',
+			lineHeight: '55px'
 		},
 		[theme.breakpoints.down('sm')]: {
 			fontSize: '7vw',
-			lineHeight: '12vw',
+			lineHeight: '12vw'
 		},
 		width: '100%',
 		padding: '10px',

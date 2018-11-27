@@ -3,7 +3,7 @@ import {
 } from '../theme';
 
 const homeStyle = theme => ({
-	wrapper: {
+	container: {
 		[theme.breakpoints.up('md')]: {
 			marginTop: `-${navbarHeight}px`
 		},

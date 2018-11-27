@@ -65,7 +65,7 @@ class App extends React.Component {
 
 		return (
 			<Sidebar {...sidebarProps}>
-				<Element id="sections" className={classes.wrapper}>
+				<Element id="sections" className={classes.container}>
 					{mql.matches ? (
 						<StickyBox className={classes.stickyBox}>
 							<Navbar onSectionChanged={this.onSectionChanged} />

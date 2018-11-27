@@ -9,22 +9,16 @@ import menuToggleStyle from '../assets/jss/components/menuToggleStyle';
 const MenuToggle = ({ ...props }) => {
 
 	const {
-		section,
 		onClick,
 		classes,
 		className
 	} = props;
 
-	let color = 'primary';
-	if (section === 'we') {
-		color = 'white';
-	}
-
 	return (
-		<a href="#toggle" className={classNames(className, classes.wrapper)} onClick={onClick}>
-			<div className={classNames(classes.bar, classes[color])} />
-			<div className={classNames(classes.bar, classes[color])} />
-			<div className={classNames(classes.bar, classes[color])} />
+		<a href="#toggle" className={classNames(className, classes.container)} onClick={onClick}>
+			<div className={classes.bar} />
+			<div className={classes.bar} />
+			<div className={classes.bar} />
 		</a>
 	);
 }

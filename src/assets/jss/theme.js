@@ -14,7 +14,7 @@ const secondaryColor = '#01305C';
 
 const grayColor = '#ABABAB';
 const darkGrayColor = '#4C4C4C';
-const lightGrayColor = '#E1E2E1';
+const lightGrayColor = '#F6F6F6';
 
 export {
     grayColor,

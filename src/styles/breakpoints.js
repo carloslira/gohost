@@ -38,7 +38,7 @@ const between = (start, end, withMedia = true) => {
 	}
 
 	let media = '@media';
-	let result = `(min-width: ${values[start]}px and max-width: ${values[keys[endIndex]] - 0.05}px)`;
+	let result = `(min-width: ${values[start] - 0.05}px and max-width: ${values[keys[endIndex]] - 0.05}px)`;
 
 	if (withMedia) {
 		result = `${media} ${result}`;

@@ -29,7 +29,7 @@ const appStyle = theme => ({
 			src: `url("${githubPrefix}/fonts/Pluto/HVD Fonts - PlutoBold.otf") format("opentype")`
 		}
 	],
-	wrapper: {
+	container: {
         height: '100vh',
         overflowX: 'hidden',
         overflowY: 'scroll',

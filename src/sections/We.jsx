@@ -28,7 +28,7 @@ class We extends React.Component {
 		} = this.props;
 
 		return (
-			<div className={classes.wrapper}>
+			<div className={classes.container}>
 				<div className={classes.descriptionContainer}>
 					<div className={classes.descriptionWrapper}>
 						<P color="secondary" className={classes.description}>A GoHost oferece todos os serviços de gerenciamento de aluguéis que seu imóvel merece para se tornar um sucesso de ocupação e avaliação</P>

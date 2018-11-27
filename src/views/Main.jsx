@@ -18,7 +18,7 @@ class Main extends React.Component {
 		} = this.props;
 
 		return (
-			<div className={classes.wrapper}>
+			<div className={classes.container}>
 				{appRoutes.map((prop, key) => 
 					<Element name={prop.section.name} key={key}>
 						<prop.section.component />
