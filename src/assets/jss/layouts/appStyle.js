@@ -2,31 +2,26 @@ import {
 	sidebarWidth
 } from '../theme';
 
-let githubPrefix = '';
-if (process.env.NODE_ENV === 'production') {
-    githubPrefix = '/gohost';
-}
-
 const appStyle = theme => ({
 	'@font-face': [
 		{
 			fontWeight: '300',
 			fontFamily: 'Pluto',
-			src: `url("${githubPrefix}/fonts/Pluto/HVD Fonts - PlutoLight.otf") format("opentype")`
+			src: 'url("/fonts/Pluto/HVD Fonts - PlutoLight.otf") format("opentype")'
 		},
 		{
 			fontFamily: 'Pluto',
-			src: `url("${githubPrefix}/fonts/Pluto/HVD Fonts - PlutoRegular.otf") format("opentype")`
+			src: 'url("/fonts/Pluto/HVD Fonts - PlutoRegular.otf") format("opentype")'
 		},
 		{
 			fontWeight: '500',
 			fontFamily: 'Pluto',
-			src: `url("${githubPrefix}/fonts/Pluto/HVD Fonts - PlutoMedium.otf") format("opentype")`
+			src: 'url("/fonts/Pluto/HVD Fonts - PlutoMedium.otf") format("opentype")'
 		},
 		{
 			fontWeight: 'bold',
 			fontFamily: 'Pluto',
-			src: `url("${githubPrefix}/fonts/Pluto/HVD Fonts - PlutoBold.otf") format("opentype")`
+			src: 'url("/fonts/Pluto/HVD Fonts - PlutoBold.otf") format("opentype")'
 		}
 	],
 	container: {

@@ -1,7 +1,6 @@
 {
 	"name": "gohost",
 	"version": "0.1.0",
-	"homepage": "https://carloslira.github.io/gohost/",
 	"dependencies": {
 		"classnames": "^2.2.6",
 		"react": "^16.6.0",

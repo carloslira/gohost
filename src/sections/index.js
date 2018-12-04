@@ -1,10 +1,10 @@
-import WeSection from '../sections/We';
-import HomeSection from '../sections/Home';
-import ProcessSection from '../sections/Process';
-import ContactSection from '../sections/Contact';
-import ServicesAndPacksSection from '../sections/ServicesAndPacks';
+import WeSection from './We';
+import HomeSection from './Home';
+import ProcessSection from './Process';
+import ContactSection from './Contact';
+import ServicesAndPacksSection from './ServicesAndPacks';
 
-const appRoutes = [
+const sections = [
 	{
 		navbarName: 'Inicial',
 		sidebarName: 'Inicial',
@@ -47,4 +47,4 @@ const appRoutes = [
 	}
 ];
 
-export default appRoutes;
+export default sections;

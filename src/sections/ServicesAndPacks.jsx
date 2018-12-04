@@ -74,8 +74,8 @@ class ServicesAndPacks extends React.Component {
 									</Col>
 									<Col xs={8}>
 										<P color="primary" className={classes.serviceTitle}>GERENCIAMENTO DO ANÚNCIO</P>
-										<P color="secondary" className={classes.serviceGoal}><b>OBJETIVO: </b>atrair novos hoóspedes.</P>
-										<P color="secondary"><b>COMO FUNCIONA: </b>criamos e diferenciamos seus anúncios nas plataformas mais importantes de aluguel por temporada, produzindo fotos profissionais e descrições completas e otimizadas para ferramentasde buscas.</P>
+										<P color="secondary" className={classes.serviceGoal}><b>OBJETIVO: </b>atrair novos hóspedes.</P>
+										<P color="secondary"><b>COMO FUNCIONA: </b>criamos e diferenciamos seus anúncios nas plataformas mais importantes de aluguel por temporada, produzindo fotos profissionais e descrições completas e otimizadas para ferramentas de buscas.</P>
 									</Col>
 								</Row>
 							</Grid>

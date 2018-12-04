@@ -8,7 +8,7 @@ import {
 	Link
 } from 'react-scroll';
 
-import appRoutes from '../routes/app';
+import sections from '../sections';
 
 import {
 	navbarHeight
@@ -30,7 +30,7 @@ const Navbar = ({ ...props }) => {
 		<nav className={classNames(className, classes.container)}>
 			<img src={simplified_logo} className={classes.logo} alt="GoHost" />
 			<ul className={classes.list}>
-				{appRoutes.map((props, key) =>
+				{sections.map((props, key) =>
 					<li className={classes.listItem} key={key}>
 						<Link
 							spy={true}

@@ -8,7 +8,7 @@ import {
 	Link
 } from 'react-scroll';
 
-import appRoutes from '../routes/app';
+import sections from '../sections';
 
 import simplified_logo from '../assets/img/simplified_logo.png';
 
@@ -29,7 +29,7 @@ const SidebarContent = ({ ...props }) => {
             </div>
             <div className={classes.listContainer}>
                 <ul className={classes.list}>
-                    {appRoutes.map((prop, key) => {
+                    {sections.map((prop, key) => {
                         return (
                             <li className={classes.listItem} key={key}>
 								<Link
